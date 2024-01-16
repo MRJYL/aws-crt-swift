@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.homepage         = "https://github.com/MRJYL/aws-crt-swift.git"
     s.license          = 'MIT'
     s.author           = { "Stephen Celis" => "stephen@stephencelis.com" }
-    s.source           = { :git => "hhttps://github.com/MRJYL/aws-crt-swift.git", :tag => s.version.to_s }
+    s.source           = { :git => "https://github.com/MRJYL/aws-crt-swift.git", :tag => s.version.to_s }
     
   
     s.module_name      = 'aws-crt-swift'
