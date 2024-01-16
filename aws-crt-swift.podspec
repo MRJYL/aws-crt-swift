@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   
     s.subspec 'aws-crt-swift' do |ss|
       ss.subspec 'aws-common-runtime' do |sss|
-        sss.source_files = 'ws-common-runtime/**/*.{c,h,m,swift}'
+        sss.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}'
       end
       ss.subspec 'Source' do |sss|
         sss.source_files = 'Source/**/*.{c,h,m,swift}'
