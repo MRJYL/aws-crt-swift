@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'aws-common-runtime' do |ss|
     ss.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}'
+    ss.dependency 'aws-c-auth'
   end
   s.subspec 'Source' do |ss|
     ss.source_files = 'Source/**/*.{c,h,m,swift}'
