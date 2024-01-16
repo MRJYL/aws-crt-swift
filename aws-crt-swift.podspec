@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}'
   end
   s.subspec 'Source' do |ss|
-    ss.source_files = 'Sources/**/*.{c,h,m,swift}'
+    ss.source_files = 'Source/**/*.{c,h,m,swift}'
   end
 end
