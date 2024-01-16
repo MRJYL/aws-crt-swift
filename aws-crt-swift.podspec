@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 
   s.module_name      = 'AwsCrtSwift'
   s.default_subspec  = 'aws-crt-swift'
+  s.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}','Sources/**/*.{c,h,m,swift}'
   s.swift_versions = ['5']
 
   ios_deployment_target = '14.0'
@@ -24,11 +25,9 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = watchos_deployment_target
 
   s.subspec 'aws-crt-swift' do |ss|
-
     ss.subspec 'aws-common-runtime' do |sss|
       sss.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}'
     end
-
     ss.subspec 'aws-c-auth' do |sss|
       sss.subspec 'source' do |ssss|
         ssss.source_files = 'aws-common-runtime/aws-c-auth/include/**/*.{c,h,m,swift}'
@@ -37,7 +36,6 @@ Pod::Spec.new do |s|
         ssss.source_files = 'aws-common-runtime/source/**/*.{c,h,m,swift}'
       end
     end
-
     ss.subspec 'Source' do |sss|
       sss.source_files = 'Sources/**/*.{c,h,m,swift}'
     end
