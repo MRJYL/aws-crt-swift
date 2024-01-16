@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.watchos.deployment_target = watchos_deployment_target
   
     s.subspec 'aws-crt-swift' do |ss|
-      ss.subspec 'aws-common-runtime' do |sss|
+      ss.subspec 'AwsCommonRuntime' do |sss|
         sss.source_files = 'aws-common-runtime/**/*.{c,h,m,swift}'
       end
       ss.subspec 'Source' do |sss|
