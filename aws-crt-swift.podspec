@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "aws-crt-swift"
-    s.version          = "1.0."
+    s.version          = "1.0.0"
     s.summary          = "aws-crt-swift"
   
     s.description      = <<-DESC
