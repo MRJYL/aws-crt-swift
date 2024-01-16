@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary          = "aws-crt-swift"
   
     s.description      = <<-DESC
-    aws-crt-swift
+                            podspec for aws-crt-swift 
                          DESC
   
     s.homepage         = "https://github.com/MRJYL/aws-crt-swift.git"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.source           = { :git => "https://github.com/MRJYL/aws-crt-swift.git", :tag => s.version.to_s}
     
   
-    s.module_name      = 'aws-crt-swift'
+    s.module_name      = 'AwsCrtSwift'
     s.default_subspec  = 'aws-crt-swift'
     s.swift_versions = ['5']
   
