@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     
   
     s.module_name      = 'aws-crt-swift'
-    s.default_subspec  = 'standard'
+    s.default_subspec  = 'aws-crt-swift'
     s.swift_versions = ['5']
   
     ios_deployment_target = '14.0'
@@ -23,8 +23,12 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = ios_deployment_target
     s.watchos.deployment_target = watchos_deployment_target
   
-    s.subspec 'standard' do |ss|
-      ss.source_files = 'Sources/**/*.{c,h,m,swift}'
-      ss.exclude_files = 'Sources/**/Cipher.swift'
+    s.subspec 'aws-crt-swift' do |ss|
+      ss.subspec 'aws-common-runtime' do |sss|
+        sss.source_files = 'ws-common-runtime/**/*.{c,h,m,swift}'
+      end
+      ss.subspec 'Source' do |sss|
+        sss.source_files = 'Source/**/*.{c,h,m,swift}'
+      end
     end
   end
